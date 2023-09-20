@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-grow-1 bd-highlight">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/qiscus.svg">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button></div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="p-2 bd-highlight">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mengapa Qiscus
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solusi
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produk
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Harga</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Perusahaan
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bantuan
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-globe-asia"></i> Indonesia
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Masuk
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn custom-button" type="button">Kontak</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Banner -->
+    <div class="banner text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="text-align: left;">
+                    <h1 style="color: #01416C;"><strong>Omnichannel Sales<br>
+                        Platform untuk Tingkatkan<br>
+                        Penjualan dan Loyalitas<br>
+                        Pelanggan.</strong></h1>
+                    <p>Lakukan percakapan langsung dengan customer melalui berbagai channel secara scalable dalam satu platform dan berikan customer experience terbaik dengan Qiscus. Hubungi kami dan cari tahu bagaimana Qiscus dapat membantu bisnis Anda
+                        terus berkembang!</p>
+                    <a href="#" class="btn btn-primary">Get demo + Free Trial</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/pict1.webp" width="380px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner text-center">
+        <div class="container">
+            <h1><strong style="color: #01416C; font-size: 36px;">Digunakan Oleh 2000+ Perusahaan Terpercaya</strong></h1>
+            <div class="row row-cols-5">
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_2.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_3.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_2.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_3.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_2.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_3.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_2.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_3.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_2.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_3.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_2.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_3.webp" width="100px"></div>
+                <div class="col"><img src="assets/img/icon_1.webp" width="100px"></div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center" style="font-size: 24px; color: black">Dan masih banyak lagi perusahaan dari berbagai industri.</h1>
+
+    <div class="banner text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <img src="assets/img/pict_2.webp" width="380px">
+                </div>
+                <div class="col-md-6 position-relative" style="text-align: left;">
+                    <h1 style="color: #01416C;"><strong>Omnichannel Sales<br>
+                        Platform untuk Tingkatkan<br>
+                        Penjualan dan Loyalitas<br>
+                        Pelanggan.</strong></h1>
+                    <p>Lakukan percakapan langsung dengan customer melalui berbagai channel secara scalable dalam satu platform dan berikan customer experience terbaik dengan Qiscus. Hubungi kami dan cari tahu bagaimana Qiscus dapat membantu bisnis Anda
+                        terus berkembang!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 position-relative" style="text-align: left;">
+                    <h1 style="color: #01416C;"><strong>Omnichannel Sales<br>
+                        Platform untuk Tingkatkan<br>
+                        Penjualan dan Loyalitas<br>
+                        Pelanggan.</strong></h1>
+                    <p>Lakukan percakapan langsung dengan customer melalui berbagai channel secara scalable dalam satu platform dan berikan customer experience terbaik dengan Qiscus. Hubungi kami dan cari tahu bagaimana Qiscus dapat membantu bisnis Anda
+                        terus berkembang!</p>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <img src="assets/img/pict3.webp" width="380px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <img src="assets/img/pict4.webp" width="380px">
+                </div>
+                <div class="col-md-6 position-relative" style="text-align: left;">
+                    <h1 style="color: #01416C;"><strong>Omnichannel Sales<br>
+                        Platform untuk Tingkatkan<br>
+                        Penjualan dan Loyalitas<br>
+                        Pelanggan.</strong></h1>
+                    <p>Lakukan percakapan langsung dengan customer melalui berbagai channel secara scalable dalam satu platform dan berikan customer experience terbaik dengan Qiscus. Hubungi kami dan cari tahu bagaimana Qiscus dapat membantu bisnis Anda
+                        terus berkembang!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="banner text-center" style="background-color: #2f80ed;">
+        <h1 style="color: white;"><strong>Solusi Qiscus Terbukti Mampu </strong></h1>
+        <h1 style="color: white;"><strong>Bantu Tingkatkan Performa Bisnis</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h2>+2X</h2>
+                        <p>Up to 2X Increase in Sales Conversion</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h2>+50%</h2>
+                        <p>Up to 50% Reduction in Manpower Cost</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h2>+90%</h2>
+                        <p>Up to 90% Increase in Agent Productivity</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h2>+2X</h2>
+                        <p>Up to 2X Increase in Sales Conversion</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h2>+50%</h2>
+                        <p>Up to 50% Reduction in Manpower Cost</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-box">
+                        <h2>+90%</h2>
+                        <p>Up to 90% Increase in Agent Productivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner" style="background-color: #eff7fc;">
+        <h1 style="color: #01416C"><strong>Testimoni Pengguna Qiscus</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="wrap-contents">
+                            <div class="content">
+                                <picture class="box-image">
+                                    <img src="assets/img/icon1.webp" />
+                                </picture>
+                                <div class="title">
+                                    <div class="name">Drisa Hajar</div>
+                                    <div class="role">CCS Team Leader</div>
+                                </div>
+                                <div class="description">
+                                    “Kami melihat bahwa Qiscus Omnichannel Chat sangat efektif dalam membangun dan meningkatkan engagement dengan para nasabah dan calon nasabah. Selain itu, dengan adanya fitur Analytics, kami jadi lebih mengetahui berbagai hal secara akurat, seperti response
+                                    time dan performa para agen. Tentunya hal ini juga sangat membantu kami dalam proses penentuan KPI pada tim customer service untuk kedepannya.“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="wrap-contents">
+                            <div class="content">
+                                <picture class="box-image">
+                                    <img src="assets/img/icon1.webp" />
+                                </picture>
+                                <div class="title">
+                                    <div class="name">Drisa Hajar</div>
+                                    <div class="role">CCS Team Leader</div>
+                                </div>
+                                <div class="description">
+                                    “Kami melihat bahwa Qiscus Omnichannel Chat sangat efektif dalam membangun dan meningkatkan engagement dengan para nasabah dan calon nasabah. Selain itu, dengan adanya fitur Analytics, kami jadi lebih mengetahui berbagai hal secara akurat, seperti response
+                                    time dan performa para agen. Tentunya hal ini juga sangat membantu kami dalam proses penentuan KPI pada tim customer service untuk kedepannya.“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="wrap-contents">
+                            <div class="content">
+                                <picture class="box-image">
+                                    <img src="assets/img/icon1.webp" />
+                                </picture>
+                                <div class="title">
+                                    <div class="name">Drisa Hajar</div>
+                                    <div class="role">CCS Team Leader</div>
+                                </div>
+                                <div class="description">
+                                    “Kami melihat bahwa Qiscus Omnichannel Chat sangat efektif dalam membangun dan meningkatkan engagement dengan para nasabah dan calon nasabah. Selain itu, dengan adanya fitur Analytics, kami jadi lebih mengetahui berbagai hal secara akurat, seperti response
+                                    time dan performa para agen. Tentunya hal ini juga sangat membantu kami dalam proses penentuan KPI pada tim customer service untuk kedepannya.“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="wrap-contents">
+                            <div class="content">
+                                <picture class="box-image">
+                                    <img src="assets/img/icon1.webp" />
+                                </picture>
+                                <div class="title">
+                                    <div class="name">Drisa Hajar</div>
+                                    <div class="role">CCS Team Leader</div>
+                                </div>
+                                <div class="description">
+                                    “Kami melihat bahwa Qiscus Omnichannel Chat sangat efektif dalam membangun dan meningkatkan engagement dengan para nasabah dan calon nasabah. Selain itu, dengan adanya fitur Analytics, kami jadi lebih mengetahui berbagai hal secara akurat, seperti response
+                                    time dan performa para agen. Tentunya hal ini juga sangat membantu kami dalam proses penentuan KPI pada tim customer service untuk kedepannya.“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="wrap-contents">
+                            <div class="content">
+                                <picture class="box-image">
+                                    <img src="assets/img/icon1.webp" />
+                                </picture>
+                                <div class="title">
+                                    <div class="name">Drisa Hajar</div>
+                                    <div class="role">CCS Team Leader</div>
+                                </div>
+                                <div class="description">
+                                    “Kami melihat bahwa Qiscus Omnichannel Chat sangat efektif dalam membangun dan meningkatkan engagement dengan para nasabah dan calon nasabah. Selain itu, dengan adanya fitur Analytics, kami jadi lebih mengetahui berbagai hal secara akurat, seperti response
+                                    time dan performa para agen. Tentunya hal ini juga sangat membantu kami dalam proses penentuan KPI pada tim customer service untuk kedepannya.“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="wrap-contents">
+                            <div class="content">
+                                <picture class="box-image">
+                                    <img src="assets/img/icon1.webp" />
+                                </picture>
+                                <div class="title">
+                                    <div class="name">Drisa Hajar</div>
+                                    <div class="role">CCS Team Leader</div>
+                                </div>
+                                <div class="description">
+                                    “Kami melihat bahwa Qiscus Omnichannel Chat sangat efektif dalam membangun dan meningkatkan engagement dengan para nasabah dan calon nasabah. Selain itu, dengan adanya fitur Analytics, kami jadi lebih mengetahui berbagai hal secara akurat, seperti response
+                                    time dan performa para agen. Tentunya hal ini juga sangat membantu kami dalam proses penentuan KPI pada tim customer service untuk kedepannya.“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="color: #01416C"><strong>Dapatkan Free Trial dan Demo Solusi dari Qiscus</strong></h1>
+        <p>Isi form berikut ini dan kami akan segera hubungi Anda untuk atur<br> jadwal demo. Tim kami akan tunjukkan kepada Anda bagaimana<br> Qiscus dapat membantu bisnis Anda terus berkembang.</p>
+
+        <div class="card" style="width:1000px;">
+            <div class="container">
+                <form class="form-grid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="namaPerusahaan">Ketik Nama Perusahaan</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="namaPerusahaan" placeholder="Ketik nama perusahaan">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailPerusahaan">Email Perusahaan</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="emailPerusahaan" style="width: 100%;" placeholder="Email Perusahaan (andy@company.com)">
+                            </div>
+                            <div class="form-group">
+                                <label for="namaPekerjaan">Nama Pekerjaan</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="namaPekerjaan" placeholder="Nama Pekerjaan">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="jumlahKaryawan">Jumlah Karyawan</label>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control select" id="jumlahKaryawan">
+                                    <option>-- choose --</option>
+                                    <option>1-10</option>
+                                    <option>11-50</option>
+                                    <option>51-100</option>
+                                    <option>101-500</option>
+                                    <option>501-1000</option>
+                                    <option>Lebih dari 1000</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nomerHP">Nomer HP</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="nomerHP" placeholder="Nomer HP (+62812345678)">
+                            </div>
+                            <div class="form-group">
+                                <label for="caraMenemukanKami">Bagaimana Menemukan Kami?</label>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="caraMenemukanKami">
+                                    <option>-- choose --</option>
+                                    <option>Google</option>
+                                    <option>Media Sosial</option>
+                                    <option>Referensi Teman/Kolega</option>
+                                    <option>Lainnya</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Get Demo + Free Trial</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/img/whatsapp.svg">
+                </div>
+                <div class="col">
+                    <img src="assets/img/instagram.svg">
+                </div>
+                <div class="col">
+                    <img src="assets/img/facebook.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1 style="color: #01416C;"><strong>Kisah Sukses Perusahaan yang Telah Gunakan Qiscus</strong></h1>
+        <p>Temukan beragam kisah sukses lainnya bagaimana solusi Qiscus secara nyata<br> dapat memberikan efek positif pada performa bisnis Anda.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-light">
+        <div class="d-flex flex-column bd-highlight mb-2">
+            <div class="p-2 bd-highlight">
+                <div class="container">
+                    <div class="row row-cols-4">
+                        <div class="col" id="alamat">
+                            <img class="" src="assets/img/qiscus-white.svg" style="margin-bottom: 30px;">
+                            <p><strong>Singapore:</strong><br>1 Coleman Street, #10-06 The Adelphi, Singapore 179803</p>
+                            <p><strong>Jakarta:</strong><br>Sampoerna Strategic Square North Tower Lantai 25, Jl. Jenderal Sudirman No.Kav. 45, Karet Semanggi, Setiabudi, South Jakarta City, Jakarta 12930</p>
+                            <p><strong>Yogyakarta:</strong><br>Jl. Timoho No. 43, Muja Muju, Yogyakarta 55165</p>
+                        </div>
+                        <div class="col">
+                            <p><strong>Produk</strong> </p>
+                            <p>Qiscus Omnichannel Chat </p>
+                            <p>Qiscus Omnichannel CRM </p>
+                            <p>Qiscus Ticketing </p>
+                            <p>Qiscus App Center </p>
+                            <p>WhatsApp Business API </p>
+                            <p>Instagram Messenger API </p>
+                            <p>In-App Chat SDK </p>
+                            <p>Chatbot and Robolabs </p>
+                            <p>Qiscus Call Centre </p>
+                            <p>Qiscus AI Assistant </p>
+                            <p>Qiscus CDP </p>
+                            <p>Qiscus Shop </p>
+                            <p>Qiscus Survey </p>
+                        </div>
+                        <div class="col">
+                            <p><strong>Bantuan</strong> </p>
+                            <p>Kontak Sales </p>
+                            <p>Pusat Bantuan </p>
+                            <p>White Paper </p>
+                            <p>Blog </p>
+                            <p>Documentation </p>
+                        </div>
+                        <div class="col">
+                            <p><strong>Perusahaan</strong> </p>
+                            <p>Tentang Kami </p>
+                            <p>Pers & Media </p>
+                            <p>Kebijakan Privasi </p>
+                            <p>Persyaratan Layanan </p>
+                            <p>Karir </p>
+                        </div>
+                    </div>
+                    <div class="d-flex bd-highlight" style="border-top: 1px solid #ffffff;">
+                        <div class="p-2 flex-grow-1 bd-highlight">
+                            <div class="d-flex flex-column bd-highlight mb-2">
+                                <div class="p-2 bd-highlight">Qiscus © 2023</div>
+                                <div class="p-2 bd-highlight">
+                                    <div class="container">
+                                        <div class="row row-cols-auto">
+                                            <div class="col"><img src="assets/img/linkedin.svg"></div>
+                                            <div class="col"><img src="assets/img/fb.svg"></div>
+                                            <div class="col"><img src="assets/img/twt.svg"></div>
+                                            <div class="col"><img src="assets/img/ig.svg"></div>
+                                            <div class="col"><img src="assets/img/email.svg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bd-highlight"><img src="assets/img/a1.svg"></div>
+                        <div class="p-2 bd-highlight"><img src="assets/img/b1.svg"></div>
+                        <div class="p-2 bd-highlight"><img src="assets/img/meta-bussiness-partner_h72.svg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 bd-highlight">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
